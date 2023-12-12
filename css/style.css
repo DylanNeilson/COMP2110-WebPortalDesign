@@ -1,0 +1,390 @@
+/* 
+  Name: Dylan Neilson
+  Student Id: 47004029
+*/
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: white;
+  margin:0;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header h1 {
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.page-header-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.page-header-main :nth-child(1) { order: 2;}
+.page-header-main :nth-child(2) { order: 1;}
+.page-header-main :nth-child(3) { order: 3;}
+
+.logo {
+  background-image: url('https://staff.mq.edu.au/media/images/images11112/macquarie-university-logo.png');
+  background-size: 300px;
+  background-position: center;
+  width: 250px;
+  height: 80px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space:nowrap;
+}
+
+.main-nav {
+  background-color: indianred;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-top: -40px;
+  width: 300px;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 238px;
+}
+
+.main-menu :nth-child(1) { order: 1;}
+.main-menu:nth-child(2) { order: 2;}
+.main-menu :nth-child(3) { order: 3;}
+
+.main-menu li {
+  margin-left: -40px;
+}
+
+.main-menu li a {
+  color: white;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 21px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.main-menu li a:hover {
+  background-color: #850000;
+}
+
+.currentpage {
+  color: white;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #850000;
+}
+
+.header-search {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  background-color: indianred;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header-search  input[type=submit] {
+  background-color: white;
+  color: gray;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-search  input[type=submit]:hover {
+  color: white;
+  background-color: #850000;
+}
+
+#nav-main-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 180px;
+  background-color: indianred;
+  width: 800px;
+}
+
+#main-q {
+  width: 20%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+
+#nav-main-search label {
+  display: none;
+}
+
+.header-auth {
+  margin-top: -100px;
+  margin-left: 130px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 20px;
+  /* filter: drop-shadow(0px 0px 5px #949494); */
+  box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.52);
+  -webkit-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.52);
+  -moz-box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.52);
+  width: 250px;
+}
+
+#login_register {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+#login {
+  width: 240px;
+}
+
+#login li {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-left: -40px;
+}
+
+#login input {
+  width: 65%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#submitbutton input[type=submit] {
+  width: 100%;
+  background-color: indianred;
+  color: white;
+  margin-bottom: -15px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submitbutton input[type=submit]:hover {
+  background-color: #850000;
+}
+
+#register {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 200px;
+  background-color: indianred;
+  color: white;
+  padding: 4px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+#register:hover {
+  background-color: #850000;
+}
+
+#register a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: justify;
+}
+
+section {
+  padding-right: 30px;
+}
+
+#primary-widgets {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  padding-left: 50px;
+  width: 250px;
+}
+
+#links-widget ul {
+  margin: 0;
+  padding: 0;
+}
+
+#links-widget li {
+  background-color: indianred;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+
+#links-widget li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+#links-widget li a:hover {
+  border-radius: 10px;
+  background-color: #850000;
+}
+
+#weather-widget {
+  padding-bottom: 25px;
+}
+
+#weather-widget ul {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color: lightgray;
+  background-image: url('https://s3.eu-central-1.amazonaws.com/meteomatics-assets-test/2_Products/Weather-Widget/weather-widget-elcarito-MHNjEBeLTgw-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.maxtemp {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 45px;
+}
+
+.mintemp:before {
+  content: "L:\20";
+  white-space: pre;
+}
+
+.mintem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 20px;
+  margin-top: -25px;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#weather-widget ul li:nth-child(1) { order: 4;}
+#weather-widget ul li:nth-child(2) { order: 3;}
+#weather-widget ul li:nth-child(3) { order: 2;}
+#weather-widget ul li:nth-child(4) { order: 1;}
+
+#weather-widget li {
+  padding: 8px 16px;
+  /* filter: drop-shadow(0px 0px 5px #464646); */
+  text-shadow: 0px 0px 15px rgba(0,0,0,70);
+}
+
+#secondary-widgets {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+
+#task-widget dl {
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color: #f1f1f1;
+}
+
+#task-widget dt {
+  padding: 8px 16px;
+}
+
+#task-widget dd {
+  padding-bottom: 5px;
+}
+
+#assignments-widget {
+  padding-bottom: 20px;
+}
+
+#assignments-widget ul {
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  color: white;
+}
+
+#assignments-widget li {
+  background-color: indianred;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 8px 16px;
+}
+
+#assignments-widget li:hover {
+  background-color: #850000;
+}
+
+.widget img{ 
+  border-radius: 20px;
+}
+
+footer {
+  background-color: indianred;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: aliceblue;
+  font-size: large;
+}
+
+footer p {
+  font-size: 12px;
+}
